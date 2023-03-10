@@ -1,0 +1,26 @@
+server:
+  port : 8080
+
+  forward-headers-strategy: framework
+  tomcat:
+    redirect-context-root: false
+spring:
+  application:
+    name: kolin-webflux-rest
+  profiles:
+    include: ${ACTIVE_PROFILES}
+  jmx:
+    enabled: false
+  mvc:
+    view:
+      suffix: .html
+      prefix: /static/
+  webflux:
+    base-path: /kolin-webflux-rest
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
