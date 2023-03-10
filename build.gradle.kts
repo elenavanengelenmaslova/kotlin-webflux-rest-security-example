@@ -7,7 +7,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    val springVersion = "3.0.2"
+    val springVersion = "3.0.4"
     val kotlinVersion = "1.8.10"
     val openApiGeneratorVersion = "6.4.0"
     val dependencyManagementVersion = "1.1.0"
